@@ -15,7 +15,7 @@ body {
 .section {
     box-sizing: border-box;
     float: left;
-    width: 33.33%;
+    width: 30.0%;
     margin: 0 10px 20px 0;
     position: relative;
     background-color: #f0f0f0; /* Set background color for sections */
