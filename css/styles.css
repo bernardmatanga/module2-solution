@@ -1,76 +1,51 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-section {
-    border: 1px solid #000;
-    margin: 10px;
-}
-
-.desktop, .tablet, .mobile {
-    border: 1px solid #000;
-    margin: 10px;
-}
-
-.desktop {
-    float: left;
-    width: 32.0%;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.tablet {
-    float: left;
-    width: 50%;
-    box-sizing: border-box;
-}
-
-.mobile {
+.container {
     width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.section {
     box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 20px 0;
+    position: relative;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
 }
 
 .section-title {
-    background-color: #ffcc00; /* Choose your color */
-    color: #000; /* Adjust text color for readability */
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
     border: 1px solid #000;
-    padding: 5px;
-    text-align: right;
 }
 
-/* Add media queries for tablet and mobile views */
-@media only screen and (max-width: 991px) {
-    .desktop {
+/* Tablet view */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section {
         width: 50%;
+        margin-right: 10px;
     }
-
-    .tablet {
-        width: 50%;
-    }
-
-    .tablet:nth-child(3) {
+    .section:nth-child(2n) {
         clear: both;
     }
-
-    .mobile {
-        width: 100%;
-    }
 }
 
+/* Mobile view */
 @media only screen and (max-width: 767px) {
-    .desktop, .tablet {
+    .section {
         width: 100%;
-        clear: both;
-    }
-
-    .mobile {
-        width: 100%;
+        margin: 0 0 20px 0;
     }
 }
+
