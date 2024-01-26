@@ -1,53 +1,76 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    overflow: hidden;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-.section {
-    box-sizing: border-box;
+section {
+    border: 1px solid #000;
+    margin: 10px;
+}
+
+.desktop, .tablet, .mobile {
+    border: 1px solid #000;
+    margin: 10px;
+}
+
+.desktop {
     float: left;
-    width: 30.0%;
-    margin: 0 10px 20px 0;
-    position: relative;
-    background-color: #f0f0f0; /* Set background color for sections */
-    border: 1px solid #000; /* Set 1px black border for sections */
+    width: 32.0%;
+    box-sizing: border-box;
+}
+
+.tablet {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.mobile {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .section-title {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #333; /* Set background color for section title regions */
-    color: #fff; /* Set text color for section title regions */
-    padding: 5px 10px;
-    border: 1px solid #000; /* Set 1px black border for section title regions */
+    background-color: #ffcc00; /* Choose your color */
+    color: #000; /* Adjust text color for readability */
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: right;
 }
 
-/* Tablet view */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .section {
+/* Add media queries for tablet and mobile views */
+@media only screen and (max-width: 991px) {
+    .desktop {
         width: 50%;
-        margin-right: 10px;
     }
-    .section:nth-child(2n) {
+
+    .tablet {
+        width: 50%;
+    }
+
+    .tablet:nth-child(3) {
         clear: both;
     }
-}
 
-/* Mobile view */
-@media only screen and (max-width: 767px) {
-    .section {
+    .mobile {
         width: 100%;
-        margin: 0 0 20px 0;
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .desktop, .tablet {
+        width: 100%;
+        clear: both;
+    }
+
+    .mobile {
+        width: 100%;
+    }
+}
