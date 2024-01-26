@@ -1,1 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.section {
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+    margin: 0 10px 20px 0;
+    position: relative;
+    background-color: #f0f0f0; /* Set background color for sections */
+    border: 1px solid #000; /* Set 1px black border for sections */
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333; /* Set background color for section title regions */
+    color: #fff; /* Set text color for section title regions */
+    padding: 5px 10px;
+    border: 1px solid #000; /* Set 1px black border for section title regions */
+}
+
+/* Tablet view */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 50%;
+        margin-right: 10px;
+    }
+    .section:nth-child(2n) {
+        clear: both;
+    }
+}
+
+/* Mobile view */
+@media only screen and (max-width: 767px) {
+    .section {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
 
