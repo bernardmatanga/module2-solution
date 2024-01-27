@@ -36,19 +36,18 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #333; /* Set background color for section title regions */
     color: #fff; /* Set text color for section title regions */
     padding: 5px 10px;
     border: 1px solid #000; /* Set 1px black border for section title regions */
 }
 #chicken {
-    background-color: #ff6a00;
+    background-color: #ff6a00; /* Set background color for hicken section title regions */
 }
 #beef {
-    background-color: #0094ffff;
+    background-color: #0094ffff; /* Set background color for beef section title regions */
 }
 #sushi {
-    background-color: #808080;
+    background-color: #808080; /* Set background color for sushi section title regions */
 }
 
 /********** Large devices only **********/
