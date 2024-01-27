@@ -5,6 +5,16 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.paragraph {
+    margin: 35px 20px;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -18,12 +28,8 @@ body {
     width: 31.33%;
     margin: 0 10px 20px 0;
     position: relative;
-    /* Set background color for sections */
-    border: 1px solid #000; /* Set 1px black border for sections */
-}
-
-.paragraph {
-    margin: 35px 20px;
+    background-color: green; /* Set background color for sections */
+    border: 1px solid; /* Set 1px black border for sections */
 }
 
 .section-title {
@@ -35,25 +41,15 @@ body {
     padding: 5px 10px;
     border: 1px solid #000; /* Set 1px black border for section title regions */
 }
-
-/* Tablet view */
-/*@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .section {
-        width: 50%;
-        margin-right: 10px;
-    }
-    .section:nth-child(2n) {
-        clear: both;
-    }
-}*/
-
-/* Mobile view */
-/*@media only screen and (max-width: 767px) {
-    .section {
-        width: 100%;
-        margin: 0 0 20px 0;
-    }
-}*/
+#chicken {
+    background-color: #ff6a00;
+}
+#beef {
+    background-color: #0094ffff;
+}
+#sushi {
+    background-color: #808080;
+}
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
